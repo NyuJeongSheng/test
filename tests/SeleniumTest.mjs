@@ -13,7 +13,7 @@ const seleniumUrl = environment === 'github'
 // Note: Start the nodejs server before running the test locally
 const serverUrl = environment === 'github' 
   ? 'http://testserver:3001' 
-  : 'http://localhost:3001';
+  : 'http://host.docker.internal:3001';
 
 console.log(`Running tests in '${environment}' environment`);
 console.log(`Selenium URL: ${seleniumUrl}`);

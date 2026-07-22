@@ -1,0 +1,8 @@
+Use the below instead
+
+docker run -d \
+  --name selenium-server \
+  -p 4444:4444 \
+  -p 7900:7900 \
+  --shm-size="2g" \
+  selenium/standalone-chrome:latest
